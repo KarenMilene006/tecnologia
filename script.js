@@ -1,6 +1,6 @@
 const menu = document.querySelector("header");
 function toggleHeaderClass() {
-  if (window.scrollY > 1) {
+  if (window.scrollY > 0) {
     menu.classList.add("active");
   } else {
     menu.classList.remove("active");
