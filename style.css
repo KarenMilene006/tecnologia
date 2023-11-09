@@ -1,28 +1,34 @@
 * {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
+
   width: 100%;
-  height: 90px;
-  border: solid 2px red;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.logo {
-  border: solid 2px purple;
-  width: 20px;
-  right: 20px;
+header.active {
+  /* Função para ativar o menu quando rolar o scroll */
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 nav {
+  width: 80%;
+
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  cursor: pointer;
 }
 
 nav a {
@@ -30,90 +36,94 @@ nav a {
   color: #161616;
   font-family: Manrope;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  opacity: .8;
+  transition: .3s ease-in-out;
+}
+nav a:hover{
+  opacity: 1;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  display: flex; /* Torna a lista dentro da navegação flexível */
+  display: flex;
 }
 
 nav li {
-  margin-right: 20px; /* Espaçamento entre os itens de navegação (opcional) */
-  color: #fff; /* Cor do texto (opcional) */
+  margin-right: 20px;
+  color: #fff;
 }
 
-#btnStart {
+.btnStart {
+  cursor: pointer;
+
   width: 150px;
   height: 50px;
+
   border: none;
   border-radius: 8px;
-  cursor: pointer;
+
   font-family: Manrope;
   font-size: 1rem;
   font-weight: bold;
+
   background-color: #16c016;
   color: #fff;
   transition: 0.5s ease-in-out;
 }
 
-
-#btnStart:hover {
+.btnStart:hover {
   background-color: #fff;
   border: 1px solid #16c016;
   color: #16c016;
   font-weight: bold;
 }
 
-
-main .lapt {
-  border: solid 2px blue;
+.lapt {
   width: 100%;
-  height: 690px;
-  background-size: cover;
+  height: 65rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.7),
-      rgb(255, 255, 255, 0.7)
+      rgb(255, 255, 255, 0.8)
     ),
     url("img/laptop-g361bae5f6-1280.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
-.lapt div {
-  border: solid 2px red;
-  width: 44%;
-  height: 295px;
-  display: flex;
-  flex-direction: column;
+
+.lapt .textmain {
+  width: 35%;
+  height: auto;
 }
 
-.lapt div p {
+.lapt .textmain p {
   color: #000;
   font-family: Manrope;
   font-size: 17px;
-  font-style: normal;
   font-weight: 400;
+  margin-block: 20px;
 }
 
-.lapt div h1 {
+.lapt .textmain h1 {
   color: #000;
   font-family: Manrope;
   font-size: 60px;
-  font-style: normal;
   font-weight: 700;
 }
 
 .caixa-pc {
   width: 30%;
-  border: solid 2px blue;
-  background-size: cover;
+
 }
 
 .pc {
