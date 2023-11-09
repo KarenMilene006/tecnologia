@@ -3,21 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 header {
-
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: 0.2s linear;
 }
 header.active {
-  /* Função para ativar o menu quando rolar o scroll */
-  border: 2px solid red;
+  /* Classe para ativar o menu quando rolar o scroll */
+  background-color: #fff;
   position: fixed;
+  height: 55px;
   top: 0;
   right: 0;
+  z-index: 1;
+  transition: 0.4s linear;
+}
+header.active nav button {
+  height: 40px;
+  font-size: 1rem;
 }
 
 nav {
@@ -38,10 +47,11 @@ nav a {
   font-family: Manrope;
   font-size: 16px;
   font-weight: 700;
-  opacity: .8;
-  transition: .3s ease-in-out;
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
 }
-nav a:hover{
+
+nav a:hover {
   opacity: 1;
 }
 
@@ -89,7 +99,6 @@ button:hover {
   align-items: center;
   justify-content: space-evenly;
 
-
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgb(255, 255, 255, 0.8)
@@ -98,13 +107,10 @@ button:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
-
 
 .lapt .textmain {
   width: 35%;
-
 }
 
 .lapt .textmain p {
@@ -124,20 +130,17 @@ button:hover {
 
 .caixa-pc {
   width: 30%;
-
 }
 
 .pc {
   width: 100%;
 }
 
-
 /* ================== Inicio da segunda section ================== */
 .informations {
-
   width: 100%;
   height: auto;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -148,21 +151,20 @@ button:hover {
 .icons {
   width: 250px;
   height: auto;
-  margin-block: 20px;
+  margin-block: 40px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; 
-
+  justify-content: space-evenly;
 }
-.icons h3{
+.icons h3 {
   color: #fff;
-
+  margin-block: 5px;
   font-family: Manrope;
   font-size: 2rem;
   font-weight: bold;
 }
-.icons p{
+.icons p {
   color: #000;
 
   font-family: Manrope;
@@ -186,7 +188,6 @@ button:hover {
 .img-icons {
   width: 80%;
   height: 43px;
-
 }
 
 /* ================== Inicio da terceira section  ==================*/
