@@ -1,133 +1,1368 @@
-*{
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-}
-
-header{
-    width: 100%;
-    height: 90px;
-    border:solid 2px red;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-}
-
-.logo{
-  border:solid 2px purple;
-  width: 20px;
-  right: 20px;
-}
-
-nav {
-    display: flex; 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
   }
 
-  nav a{
+  html {
+    scroll-behavior: smooth;
+    height: 2500px;
+  }
+                                /* =================================  INICIO HEADER====================================== */
+  header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 10;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.2s linear;
+  }
+
+  header.active {
+    /* Classe para ativar o menu quando rolar o scroll */
+    background-color: #fff;
+    height: 55px;
+    transition: 0.2s linear;
+  }
+
+  header.active nav button {
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .logo {
+    cursor: pointer;
+  }
+
+  nav a {
     text-decoration: none;
     color: #161616;
-    font-family: Manrope;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    opacity: 1;
   }
 
   nav ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Torna a lista dentro da navegação flexível */
+    display: flex;
   }
 
   nav li {
-    margin-right: 20px; /* Espaçamento entre os itens de navegação (opcional) */
-    color: #fff; /* Cor do texto (opcional) */
+    margin-right: 20px;
+    color: #fff;
   }
 
-main .lapt{
-    border: solid 2px blue;
+  button {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #16c016;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #fff;
+    border: 1px solid #16c016;
+    color: #16c016;
+    font-weight: bold;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+                                /* ================================= INICIO PRIMEIRA SECTION====================================== */
+  .lapt {
     width: 100%;
-    height: 690px;
-    background-size: cover; 
-    background-image:linear-gradient( 
-     rgba(255, 255, 255, 0.7), rgb(255, 255, 255, 0.7)), url("img/laptop-g361bae5f6-1280.jpg");
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgb(255, 255, 255, 0.8)
+      ),
+      url("img/laptop-g361bae5f6-1280.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
+  }
 
-.lapt div{
-    border:solid 2px red;
-    width: 44%;
-    height: 295px ;
+  .lapt .textmain {
+    width: 35%;
+  }
+
+  .lapt .textmain p {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-block: 20px; 
+  }
+
+  .lapt .textmain h1 {
+    color: #000;
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-weight: 700;
+  }
+
+  .caixa-pc {
+    width: 30%;
+  }
+
+  .pc {
+    width: 100%;
+  }
+
+                                /* ================================= INICIO SEGUNDA SECTION====================================== */
+  .informations {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #16c016;
+  }
+
+  .icons {
+    width: 250px;
+    height: auto;
+    margin-block: 40px;
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .icons h3 {
+    color: #fff;
+    margin-block: 5px;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .icons p {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 
-.lapt div p{
-  color: #000;
-  font-family: Manrope;
+  .caixa-icons {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+  }
+
+  .img-icons {
+    width: 80%;
+    height: 43px;
+  }
+
+                                /* ================================= INICIO TERCEIRA SECTION====================================== */
+  .informationInvite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    gap: 30px;
+  }
+  .informationimg{
+    width: 38%;
+  }
+
+  .informationimg img {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .textInventing {
+    width: 43%;
+  }
+
+  .textInventing h2 {
+    font-size: 3rem;
+  }
+  .textInventing p {
+    font-size: 1.2rem;
+    margin-block: 15px 2rem;
+  }
+
+                                /* ================================= INICIO QUARTA SECTION====================================== */
+  #study{
+    background: rgba(212, 239, 240, 1);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .textstudy{
+    width: 35%;
+  }
+
+  .textstudy p{
+  margin-bottom: 18px;
+  }
+
+  .student{
+    width: 45%;
+  }
+  .student img{
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  /* ==============================================INICIO DA QUINTA SECTION=============================================== */
+  #company{
+    background: #5BD95B;
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(
+      rgba(107, 234, 130, 0.9),
+      rgba(107, 234, 130, 0.9)), url("img/mapa.png")
+    ;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+
+  .company-text{
+    height:18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly ;
+  }
+
+  .company-text h3{
+    color: #161616;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  .company-text p{
+  color: #161616;
+  text-align: center;
   font-size: 17px;
-  font-style: normal;
   font-weight: 400;
-}
 
-.lapt div h1{
+  }
+
+  .company-img{
+    display: flex;
+    justify-content: space-evenly;
+    height: 8vh;
+    width: 94%;
+  }
+
+                                /* ================================= INICIO SEXTA SECTION====================================== */
+  #smart{
+    background: #D4EFF0;
+    width: 100%;
+    height: 320vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smart-titulo{
+    width: 60%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .smart-titulo p{
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+  }
+
+  .smart-titulo h2{
+    color: #000;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+  }
+
+  .smart-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+    height: 26vh;
+  }
+
+  .smart-text h3{
   color: #000;
-font-family: Manrope;
-font-size: 60px;
-font-style: normal;
-font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
+  }
 
-}
+  .smart-text p{
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  }
 
-.caixa-pc{
-    width: 30%; ;
-  border: solid 2px blue;
-  background-size: cover; 
-}
+  .smart-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height:260vh ;
+  }
 
-.pc{
-  width: 100%; ;
-   
-}
+  .caixa-img{
+    border:solid 2px #16C016;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width:90%;
+    height: 45vh;
+  }
 
-.lapt2{
-  border:solid 2px purple;
-  background: #16C016;
-  width: 100%;
-  height: 195px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.icons{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border: solid 2px purple;
-  height: 150px;
-}
-
- .caixa-icons{
+                                /* ================================= INICIO SETIMA SECTION====================================== */
+  .smart-figure{
+  width: 28%;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  width: 65px;
-  height: 65px;
-  border:solid 3px black;
- border-radius: 100%;
-}
+  background: linear-gradient(#161616 0%, #16C016 100%);
+  border-radius: 10px;
+  }
+
+  .smart-figure img{
+    width: 50%;
+    height: 20vh;
+  }
+  /* 
+                                /* ================================= INICIO OITAVA SECTION====================================== */
+  #grupo{
+    width: 100%;
+    height:110vh;
+    background-image: linear-gradient(
+      rgba(205, 239, 239, 0.6),
+      rgb(205, 239, 239, 0.6)
+    ),
+    url("img/grupo.png");
+    background-repeat: no-repeat;
+      background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grupo-img{
+    border: 2px solid #16C016;
+  width: 50%;
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  }
+
+  .grupo-figure{
+    width: 90%;
+    height: 60.5vh;
+  }
+
+  .grupo-figure img{
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+  }
+
+                                /* ================================= INICIO NONA SECTION====================================== */
+  #bibliografia{
+    background: rgba(212, 239, 240, 1);
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .bibliografia-text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+      width: 60%;
+      height: 15vh;
+  }
+
+  .bibliografia-text p{
+    color: #16C016;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .bibliografia-text h2{
+    color: #161616;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+
+  }
+
+  .bibliografia-img{
+    width:80%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bibliografia-bloco{
+    width: 45%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .bibliografia-bloco h4{
+    color: #161616;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+                                /* ================================= INICIO DECIMA SECTION====================================== */
+  #tecn{
+    background:rgba(53, 53, 53, 1);
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .tecn-figure{
+    width: 45%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .tecn-figure img{
+    width: 100%;
+    height: 70vh;
+  }
+
+  .tecn-text{
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .tecn-text h2{
+    color: #FFF;
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  .tecn-text p{
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+  }
+
+                                /* ================================= INICIO DECIMA-PRIMEIRA SECTION====================================== */
+  #people{
+    width: 100%;
+    height: 155vh;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .people-text{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .people-text p{
+    color: #16C016;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .people-text h2{
+    color: #161616;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .people-principal{
+    display: flex;
+    width: 87%;
+    height: 88vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .people-Alice{ 
+    border-radius: 16px;
+    border: 2px solid #16C016;
+    background: #D4EFF0;
+    background-image: url("img/Alice.png");
+    background-size: 100% 95%;; 
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Alice{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .people-willian{
+    border: 2px solid #16C016;
+    border-radius: 16px;
+    background: #D4EFF0;
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-willian{ 
+    background-image: url("img/Willian.png");
+    background-size: 100% 84vh;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 73vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+  .willian{
+        width: 10vw;
+        height: 22vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
-.img-icons{
-  width: 80%;
-  height: 43px;
-}
+  .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
+                                /* ================================= INICIO DECIMA-SEGUNDA SECTION====================================== */
+  #group{ 
+    width: 100%;
+    height: 50vh;
+    background-image:linear-gradient(
+      rgba(22, 22, 22, 0.3),
+      rgb(22, 22, 22, 0.3)
+    ),
+    url("img/equipe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .group-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 28vh;
+  }
+
+  .group-text h3{
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .group-text p{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+                                /* ================================= INICIO DECIMA-TERCEIRA SECTION====================================== */
+
+  .Article{
+    background: rgba(20, 239, 166, 0.20);
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .Article-text h2{
+    color: #161616;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  }
+
+  .Article-carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 80vh; /* Ajuste conforme necessário */
+  }
+
+  .img-carousel {
+    background: white;
+    border: #16C016 solid;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .img-carousel img{
+    width: 80%;
+    height: 60vh;;
+    border-radius: 10px;
+  } 
+
+  .button-carousel{
+    display: flex;
+    width: 70%;
+    height: 10vh;
+    justify-content: space-between;
+  }
+
+
+
+                          /* ================================= INICIO FOOTER ====================================== */
+  footer{
+    width: 100%;
+    height: 80vh;
+    background:#16C016;
+  }
+
+  .footer-text{
+    background: #161616;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .text-bloco{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+
+  .footer-text h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .footer-text p{
+    color: #FFF;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  }
+
+  .footer-search-input{
+    background: rgba(22, 22, 22, 1);
+    color: rgba(216, 213, 209, 1);
+    border:solid 1px rgba(216, 213, 209, 0.71);
+    border-radius: 7px;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+  }
+
+  .footer-rodape{
+    background: #0A0A0A;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-rodape p{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    }
+
+  /* =============RESPONSIVIDADE================= */
+
+  @media(min-width:320px) and (max-width: 500px){
+
+    header{
+      display: flex;
+      height: 90px;
+    }
+    
+    nav ul {
+      display: none;
+    }
+
+    .menu-link {
+      display: block;
+    }
+
+    nav ul.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 65px;
+      left: 4;
+      width: 80%;
+      background-color: #d1f4d1 ;
+      border: #000 solid;
+      border-radius: 15px;
+      z-index: 1;
+    }
+
+    nav ul.active a{
+      font-size: 13px;
+    }
+
+    button {
+      width: 120px;
+      height: 40px;
+      font-size: 0.8rem;
+    }
+  
+                            /* ================================= INICIO SECTION ====================================== */
+  .lapt{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 100% 170vh;
+  }
+
+  .lapt .textmain {
+    width: 90%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .lapt .textmain p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .lapt .textmain h1 {
+    color: #000;
+    font-family: Manrope;
+    font-size: clamp(1.7rem, 1.4vw, 2rem);
+    font-weight: 700;
+  }
+  .caixa-pc{
+    width: 65%;
+    height: 35vh;
+    display: flex;
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  .informationInvite {
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .textInventing h2 {
+    font-size: 1.8rem;
+  }
+
+  .textInventing {
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+  }
+
+  .textInventing p {
+    font-size: 1rem;
+    margin-block: 0;
+  }
+
+  .informationimg{
+    width: 70%;
+    
+  }
+
+  .informationimg img {
+    border-radius: 0.5rem;
+  
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  #study{
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+
+  }
+
+  .textstudy{
+    width: 90%;
+  }
+
+  .textstudy p{
+  margin-bottom: 18px;
+  }
+
+  .student{
+    width: 80%;
+
+  }
+  .student img{
+    border-radius: 0.5rem;
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  #company{
+    height: 500px;
+  }
+  
+  .company-text{
+    width: 98%;
+    height:29vh;
+  }
+  
+  .company-text h3{
+    font-size: 25px;
+  }
+  
+  .company-text p{
+    font-size: 20px;
+  }
+  
+  .company-img{
+    flex-direction: column;
+    align-items: center;
+     height: 30vh;
+    width: 80%;
+  }
+  .company-img img{
+    width: 40%;
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  #smart{
+    height: 410vh;
+    justify-content: center;
+  }
+
+  .smart-titulo{
+    width: 85%;
+    height: 35vh;
+  }
+
+  .smart-titulo p{
+    font-size: 16px;
+  }
+
+  .smart-titulo h2{
+    font-size: 35px;
+  }
+
+  .smart-text {
+    width: 90%;
+    height: 26vh;
+  }
+
+  .smart-text h3{
+    font-size: 28px;
+  }
+
+  .smart-img{
+    display: flex;
+    justify-content: space-evely;
+    width: 90%;
+    height:380vh ;
+  }
+
+  .caixa-img{
+    border-radius: 5px;
+    flex-direction: column;
+    width:100%;
+    height: 70vh;
+  }
+
+  .smart-figure{
+    width: 85%;
+    height: 30vh;
+    border-radius: 5px;
+  }
+
+
+  .smart-figure img{
+    height: 17vh;
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  #grupo{
+    height:80vh;
+    background-size: 100% 80vh;
+  }
+
+  .grupo-img{
+    width: 85%;
+    height: 65vh;
+    border-radius: 5px;
+  }
+
+  .grupo-figure{
+    height: 40.5vh;
+  }
+
+  .grupo-figure img{
+    height: 40vh;
+    border-radius: 15px;
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  #bibliografia{
+    height: 250vh;
+  }
+
+  .bibliografia-text{
+    width: 80%;
+    height: 15vh;
+  }
+
+  .bibliografia-text p{
+    font-size: 18px;
+  }
+
+  .bibliografia-img{
+    height: 219vh;
+  }
+
+  .bibliografia-bloco{
+    width: 100%;
+    height: 50vh;
+  }
+
+  .bibliografia-bloco h4{
+    font-size: 18px;
+  }
+
+  .bibliografia-bloco figure{
+    width: 40%;
+  }
+  .bibliografia-bloco figure img{
+    width: 80%;
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  #tecn{
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .tecn-figure{
+
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .tecn-figure img{
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .tecn-text{
+    width: 85%;
+    height: 35vh;
+  }
+  
+  .tecn-text h2{
+    font-size: 30px;
+  }
+
+  .tecn-text p{
+    font-size: 15px;
+  }
+  
+                            /* ================================= INICIO SECTION ====================================== */
+  #people{
+    height: 155vh;
+  }
+
+
+  .people-text{
+    width: 90%;
+    height: 20vh;
+  }
+
+  .people-principal{ 
+    width: 87%;
+    height: 110vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .people-Alice{ 
+    border-radius: 12px;
+    width: 90%;
+    height: 50vh;
+  }
+
+  .Alice{
+    width: 60vw;
+    height: 15vh;
+  }
+
+  .people-willian{
+    border-radius: 12px;
+    width: 90%;
+    height: 50vh;
+  }
+
+  .img-willian{ 
+    background-size: 100% 55vh;
+    height: 43vh;
+  }
+
+  .willian{
+    width: 22vw;
+    height: 16vh;
+    }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  #group{ 
+    width: 100%;
+    height: 33vh;
+    background-size: 100% 33vh
+  }
+
+  .group-text{
+    justify-content: space-evenly;
+    height: 25vh;
+  }
+
+  .group-text h3{
+    font-size: 27px;
+  }
+
+  .group-text p{
+    font-size: 18px;
+  }
+
+                            /* ================================= INICIO SECTION ====================================== */
+  .Article{
+    height: 105vh;
+  }
+
+  .Article-text h2{
+    font-size: 35px;
+  }
+
+  .Article-carousel {
+    width: 90%;
+    height: 65vh; 
+  }
+
+  .img-carousel img{
+    width: 90%;
+    height: 40vh;
+    border-radius: 5px;
+  } 
+
+  .button-carousel{
+    width: 90%;
+    height: 8vh;
+  }
+
+                            /* ================================= INICIO FOOTER ====================================== */
+  footer{
+    height: 60vh;
+  }
+
+  .footer-text{
+    width: 100%;
+    height: 50vh;
+  }
+
+  .text-bloco{
+    width: 90%;
+    height: 40vh;
+  }
+
+  .footer-text h2{
+    font-size: 22px;
+  }
+
+  .footer-text p{
+    font-size: 16px;
+  }
+
+  .footer-search-input{
+    border-radius: 7px;
+    height: 7vh;
+    border: solid aliceblue;
+    padding: 10px;
+  }
+
+  .footer-rodape{
+    width: 100%;
+    height: 15vh;
+
+  }
+
+  .footer-rodape p{
+    font-size: 14px; 
+
+  }
+
+  }
+                              /* ================================= MOBILE MENORES ====================================== */
+  @media(min-width:320px) and (max-width: 350px){
+
+    .lapt{
+      height: 125vh;
+    }
+    
+    .lapt .textmain {
+      height: 62vh;
+    
+    }
+    .lapt .textmain p {
+      font-size: 0.9rem;
+    }
+    
+    .lapt .textmain h1 {
+      font-size: clamp(1.5rem, 1.3vw, 1.8rem);
+    }
+    .caixa-pc{
+      width: 68%;
+      height: 38vh;
+    }
+
+    button {
+      width: 110px;
+      height: 35px;
+      font-size: 0.7rem;
+    }
+  
+                              /* ================================= INICIO SECTION ====================================== */
+    .textInventing h2 {
+      font-size: 1.5rem;
+    }
+    
+    .textInventing {
+      height: 45vh;
+    }
+    
+                            /* ================================= INICIO SECTION ====================================== */
+    .informationimg{
+      width: 80%;
+    }
+
+                              /* ================================= INICIO SECTION ====================================== */
+    .company-text h3{
+      font-size: 23px;
+    }
+    
+    .company-img{
+      height: 45vh;
+      width: 80%;
+    }
+    .company-img img{
+      width: 50%;
+    }
+    
+                                /* ================================= INICIO SECTION ====================================== */
+    .smart-titulo{
+      height: 35vh;
+    }
+
+    .smart-titulo h2{
+      font-size: 25px;
+    }
+
+    .smart-text h3{
+      font-size: 20px;
+  }
+    
+                            /* ================================= INICIO SECTION ====================================== */
+    #bibliografia{
+      height: 265vh;
+    }
+    
+    .bibliografia-text{
+      height: 15vh;
+    }
+    
+    .bibliografia-text h2{
+      font-size: 32px;
+      }
+    
+    .bibliografia-img{
+      height: 230vh;
+    }
+    
+    .bibliografia-bloco{
+      height: 55vh;
+    }
+    
+    .bibliografia-bloco h4{
+      font-size: 15px;
+    }
+  
+                              /* ================================= INICIO SECTION ====================================== */
+
+    #tecn{
+      height: 95vh;
+    }
+
+    .tecn-text{
+      width: 85%;
+      height: 43vh;
+    }
+    
+    .tecn-text h2{
+      font-size: 30px;
+    }
+    
+    .tecn-text p{
+      font-size: 15px;
+    }
+    
+                              /* ================================= INICIO SECTION ====================================== */
+    .people-text h2{
+      font-size: 25px;
+    }
+    
+                              /* ================================= INICIO SECTION ====================================== */
+    .group-text h3{
+      font-size: 20px;
+    }
+    
+                            /* ================================= INICIO FOOTER ====================================== */
+    .footer-text{
+      height: 55vh;
+    }
+    
+    .text-bloco{
+      width: 90%;
+      height: 45vh;
+    }
+    
+    .footer-text h2{
+      font-size: 18px;
+    }
+    
+    .footer-rodape{
+      height: 15vh;
+    }
+    
+    .footer-rodape p{
+      font-size: 12px; 
+    
+    }
+  }
+    
