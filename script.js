@@ -1,4 +1,14 @@
 const menu = document.querySelector("header");
+
+const btnModal = document.querySelector(".btnModal").addEventListener('click', ()=>{
+  alert("btn modal")
+});
+
+const btnStart = document.querySelector('.btnModal').addEventListener('click', () =>{
+  alert("Abriu o menu para iniciar")
+})
+
+
 function toggleHeaderClass() {
   if (window.scrollY > 0) {
     menu.classList.add("active");
@@ -16,3 +26,4 @@ toggleHeaderClass();
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);
 });
+
