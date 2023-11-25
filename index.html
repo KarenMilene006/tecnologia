@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Rubik&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e0d4a81d6c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" defer></script>
     <title>Tecnologia</title>
   </head>
 
   <body>
- <!-- ===========================================INICIOOOO DA HEADER=============================================== -->
+    <!-- ===========================================INICIOOOO DA HEADER=============================================== -->
     <header>
+      <div class="logo">
+        <a href=""><img src="img/logo.png" alt="logo" /></a>
+      </div>
 
-      <nav>
-        <div class="logo">
-          <a href=""><img src="img/logo.png" alt="logo" /></a>
-        </div>
 
+      <nav class="menuDesktop">
         <ul>
           <li><a href="#">HOW IT WORKS</a></li>
           <li><a href="#">OUR WORK</a></li>
@@ -28,20 +35,30 @@
           <li><a href="#">THE TEAM</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
-        <a class="menu-link" href="#">Menu</a>
+        
         
         <button class="btnStart">GET STARTED</button>
       </nav>
-    
+      <button id="btnMenu"><i class="fa-solid fa-bars"></i></button>
+
+      <nav class="menuMobile">
+        <ul class="menuList">
+          <li><a href="#">HOW IT WORKS</a></li>
+          <li><a href="#">OUR WORK</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">THE TEAM</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        
+
+        <button class="btnStart">GET STARTED</button>
+      </nav>
     </header>
-<!-- ============================================FIMMMMM DA HEADER=============================================== -->
+    <!-- ============================================FIMMMMM DA HEADER=============================================== -->
 
-
-<!-- ==============================================INICIO DA MAINNN=============================================== -->
+    <!-- ==============================================INICIO DA MAINNN=============================================== -->
     <main>
-
       <section class="lapt">
-
         <div class="textmain">
           <h1>Experience and Innovation in a Single Touch</h1>
           <p>
@@ -50,12 +67,16 @@
           </p>
           <button class="btnStart">Start Free Trial</button>
         </div>
-        
+
         <div class="caixa-pc">
-          <img class="pc" src="img/laptop-g361bae5f6-1280.jpg" alt="Imagem do notebook" />
+          <img
+            class="pc"
+            src="img/laptop-g361bae5f6-1280.jpg"
+            alt="Imagem do notebook"
+          />
         </div>
       </section>
-<!-- ==============================================FIMMMM DA PRIMEIRA SECTION=============================================== -->
+      <!-- ==============================================FIMMMM DA PRIMEIRA SECTION=============================================== -->
       <section class="informations">
         <div class="icons">
           <figure class="caixa-icons">
@@ -90,319 +111,320 @@
         </div>
       </section>
 
-<!-- ==============================================FIMMM DA SEGUNDAAA SECTIONNNNN=============================================== -->
+      <!-- ==============================================FIMMM DA SEGUNDAAA SECTIONNNNN=============================================== -->
 
       <section class="informationInvite">
-
         <div class="informationimg">
-          <img
-            src="img/young-employee.png"
-            alt="Pessoa com perna cruzada"
-          />
+          <img src="img/young-employee.png" alt="Pessoa com perna cruzada" />
         </div>
-          <div class="textInventing">
-            <h2>Inventing good to make it better</h2>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-            <button class="btn">Discover more</button>
+        <div class="textInventing">
+          <h2>Inventing good to make it better</h2>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+          <button class="btn">Discover more</button>
         </div>
       </section>
 
       <section id="study">
-
         <div class="textstudy">
-            <h4>
-                Multi-page sites and one-page sites
-            </h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <h4>Multi-page sites and one-page sites</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
 
-            <h4>Built with Bootstrap 5</h4>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-             
-            <h4>Free updates and support</h4>
-            <p>  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4>Built with Bootstrap 5</h4>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum.
+          </p>
+
+          <h4>Free updates and support</h4>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-        
+
         <div class="student">
-        <img src="img/student.jpg.png" alt="">
+          <img src="img/student.jpg.png" alt="" />
         </div>
-
       </section>
 
-<!--<============================================FIMMM DA TERCEIRA SECTIONNN=============================================== -->
+      <!--<============================================FIMMM DA TERCEIRA SECTIONNN=============================================== -->
 
-<section id="company">
- <div class="company-text">
-    <h3>Over 100,000 Companies around the world rely on Us.</h3>
-    <p>Egestas inceptos taciti tempor cursus ipsum eu parturient adipiscing.</p>
- </div>
+      <section id="company">
+        <div class="company-text">
+          <h3>Over 100,000 Companies around the world rely on Us.</h3>
+          <p>
+            Egestas inceptos taciti tempor cursus ipsum eu parturient
+            adipiscing.
+          </p>
+        </div>
 
-
- <figure class="company-img">
- <img src="img/compuserve.png">
- <img src="img/company.png">
- <img src="img/space.png">
- <img src="img/future.png">
- <img src="img/compname.png">
-</figure>
-
-</section>
-
-<!--<============================================FIMMM DA TERCEIRA SECTIONNN=============================================== -->
-
-<section id="smart">
-
-<div class="smart-titulo">
-  <h2>Easy and Smart App for You</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-</div>
-<div class="smart-img">    
-
-  <div class="caixa-img">
-        <figure class="smart-figure">
-          <img src="img/features5.svg.png" alt="">
+        <figure class="company-img">
+          <img src="img/compuserve.png" />
+          <img src="img/company.png" />
+          <img src="img/space.png" />
+          <img src="img/future.png" />
+          <img src="img/compname.png" />
         </figure>
-        <div class="smart-text">
-        <h3>Smart App</h3>
-        <p>Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Nunc consequat interdum varius sit. Sed viverra tellus</p>
+      </section>
+
+      <!--<============================================FIMMM DA TERCEIRA SECTIONNN=============================================== -->
+
+      <section id="smart">
+        <div class="smart-titulo">
+          <h2>Easy and Smart App for You</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="smart-img">
+          <div class="caixa-img">
+            <figure class="smart-figure">
+              <img src="img/features5.svg.png" alt="" />
+            </figure>
+            <div class="smart-text">
+              <h3>Smart App</h3>
+              <p>
+                Eget nunc scelerisque viverra mauris in aliquam sem fringilla
+                ut. Nunc consequat interdum varius sit. Sed viverra tellus
+              </p>
+            </div>
+          </div>
+
+          <div class="caixa-img">
+            <figure class="smart-figure">
+              <img src="img/features7.svg.png" alt="" />
+            </figure>
+            <div class="smart-text">
+              <h3>Beautiful UI/UX</h3>
+              <p>
+                Eget nunc scelerisque viverra mauris in aliquam sem fringilla
+                ut. Nunc consequat interdum varius sit. Sed viverra tellus
+              </p>
+            </div>
+          </div>
+
+          <div class="caixa-img">
+            <figure class="smart-figure">
+              <img src="img/features6.svg.svg" alt="" />
+            </figure>
+            <div class="smart-text">
+              <h3>Support All Devices</h3>
+              <p>
+                Eget nunc scelerisque viverra mauris in aliquam sem fringilla
+                ut. Nunc consequat interdum varius sit. Sed viverra tellus
+              </p>
+            </div>
+          </div>
+
+          <div class="caixa-img">
+            <figure class="smart-figure">
+              <img src="img/features4.svg.png" alt="" />
+            </figure>
+            <div class="smart-text">
+              <h3>Easy Configuration</h3>
+              <p>
+                Eget nunc scelerisque viverra mauris in aliquam sem fringilla
+                ut. Nunc consequat interdum varius sit. Sed viverra tellus.
+              </p>
+            </div>
+          </div>
+
+          <div class="caixa-img">
+            <figure class="smart-figure">
+              <img src="img/features3.svg.png" alt="" />
+            </figure>
+            <div class="smart-text">
+              <h3>Cloud Support</h3>
+              <p>
+                Eget nunc scelerisque viverra mauris in aliquam sem fringilla
+                ut. Nunc consequat interdum varius sit. Sed viverra tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======fimmm da sectio====== -->
+
+      <section id="grupo">
+        <div class="grupo-img">
+          <figure class="grupo-figure">
+            <img src="img/grupo.png" alt="" />
+          </figure>
+          <h3>We have a “strategic” plan its called doing things.</h3>
+          <p>-Herb Kelleher</p>
+        </div>
+      </section>
+
+      <!-- ======FIMMMMMM DAAAA SECTION============= -->
+
+      <section id="bibliografia">
+        <div class="bibliografia-text">
+          <p>Testimonials</p>
+          <h2>What they say</h2>
+        </div>
+
+        <div class="bibliografia-img">
+          <div class="bibliografia-bloco">
+            <h4>
+              Senectus aptent id urna vulputate pede litora vestibulum eu.
+              Finibus molestie natoque at urna auctor justo sagittis facilisis
+              quisque vestibulum habitant.
+            </h4>
+            <figure>
+              <img src="img/Angelina.png" alt="" />
+              <figcaption>ANGELINA</figcaption>
+            </figure>
+          </div>
+
+          <div class="bibliografia-bloco">
+            <h4>
+              Senectus aptent id urna vulputate pede litora vestibulum eu.
+              Finibus molestie natoque at urna auctor justo sagittis facilisis
+              quisque vestibulum habitant.
+            </h4>
+            <figure>
+              <img src="img/Anderson.png" alt="" />
+              <figcaption>ANDERSON</figcaption>
+            </figure>
+          </div>
+
+          <div class="bibliografia-bloco">
+            <h4>
+              Senectus aptent id urna vulputate pede litora vestibulum eu.
+              Finibus molestie natoque at urna auctor justo sagittis facilisis
+              quisque vestibulum habitant.
+            </h4>
+            <figure>
+              <img src="img/Hanna.png" alt="" />
+              <figcaption>HANNA</figcaption>
+            </figure>
+          </div>
+
+          <div class="bibliografia-bloco">
+            <h4>
+              Senectus aptent id urna vulputate pede litora vestibulum eu.
+              Finibus molestie natoque at urna auctor justo sagittis facilisis
+              quisque vestibulum habitant.
+            </h4>
+            <figure>
+              <img src="img/Jacob.png" alt="" />
+              <figcaption>JACOB</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========fimmmmm da sectionn============ -->
+
+      <section id="tecn">
+        <figure class="tecn-figure">
+          <img src="img/page.png" alt="" />
+        </figure>
+
+        <div class="tecn-text">
+          <h2>The technology works for tomorrow</h2>
+          <p>
+            Magnis primis justo mollis porttitor porta. Non placerat nulla
+            mauris viverra ultrices consectetur nisl scelerisque libero eu
+            adipiscing. Massa mus risus mollis ultrices a letius gravida
+            egestas.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===============fimm da section============== -->
+
+      <section id="people">
+        <div class="people-text">
+          <p>Our Team</p>
+          <h2>Awesome People's Behind Us</h2>
+        </div>
+
+        <div class="people-principal">
+          <div class="people-Alice">
+            <div class="Alice">
+              <h3>Alice</h3>
+            </div>
+          </div>
+
+          <div class="people-willian">
+            <div class="img-willian">
+              <div class="willian">
+                <h3>willian</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="botao">
+          <button class="btngo">Go To Team</button>
+        </div>
+      </section>
+
+      <section id="group">
+        <div class="group-text">
+          <h3>Have more questions?</h3>
+          <p>Just reach out, we’re always around to answer any questions.</p>
+          <button class="btngo">Contact Us</button>
+        </div>
+      </section>
+
+      <section class="Article">
+        <div class="Article-text">
+          <h2>News & Article</h2>
+        </div>
+
+        <div class="Article-carousel" id="carousel">
+          <div class="img-carousel">
+            <img src="img/men.png" alt="" />
+            <p>January 15, 2022</p>
+            <h3>3 Things You’ll Need to Launch a Creative Business</h3>
+          </div>
+
+          <div class="img-carousel">
+            <img src="img/social.png" alt="" />
+            <p>January 15, 2022</p>
+            <h3>Why Your Startup Needs an Active Social Media Presence</h3>
+          </div>
+
+          <div class="img-carousel">
+            <img src="img/folha.png" alt="" />
+            <p>January 15, 2022</p>
+            <h3>How Brand Activism Can Influence Business Performance</h3>
+          </div>
+        </div>
+
+        <div class="button-carousel">
+          <button id="prevBtn">ANTERIOR</button>
+          <button id="nextBtn">PROXIMA</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-text">
+        <div class="text-bloco">
+          <h2>Don't miss updates and other promotions from us.</h2>
+          <p>Semper eget duis at tellus at urna condimentum.</p>
+          <input
+            type="text"
+            class="footer-search-input"
+            placeholder="Enter Your Email"
+          />
+          <button class="footer-search-btn">Subscribe</button>
         </div>
       </div>
-  
-    <div class="caixa-img">
-      <figure class="smart-figure">
-          <img src="img/features7.svg.png" alt="">
-        </figure>
-        <div class="smart-text">
-        <h3>Beautiful UI/UX</h3>
-        <p>Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Nunc consequat interdum varius sit. Sed viverra tellus</p>
-    </div>
+
+      <div class="footer-rodape">
+        <p>© Copyright 2022 Mobirise - All Rights Reserved</p>
       </div>
-
-  <div class="caixa-img">
-    <figure class="smart-figure">
-          <img src="img/features6.svg.svg" alt="">
-        </figure>
-        <div class="smart-text">
-        <h3>Support All Devices</h3>
-        <p>Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Nunc consequat interdum varius sit. Sed viverra tellus</p>
-        </div>
-      </div>
-
-    <div class="caixa-img">
-      <figure class="smart-figure">
-  <img src="img/features4.svg.png" alt="">
-      </figure>
-      <div class="smart-text">
-      <h3>Easy Configuration</h3>
-      <p>Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Nunc consequat interdum varius sit. Sed viverra tellus.</p>
- </div>
-    </div>
-
-  <div class="caixa-img">
-    <figure class="smart-figure">
-  <img src="img/features3.svg.png" alt="">
-    </figure>
-    <div class="smart-text">
-    <h3>Cloud Support</h3>
-    <p>Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Nunc consequat interdum varius sit. Sed viverra tellus.</p>
-</div>
-  </div>
-</div>
-</section>
-
-<!-- =======fimmm da sectio====== -->
-
-<section id="grupo">
-
- <div class="grupo-img">
-<figure class="grupo-figure">
-  <img src="img/grupo.png" alt="">
-</figure>
-    <h3>We have a “strategic” plan its called doing things.</h3>
-    <p>-Herb Kelleher</p>
- </div>
-  
-</section>
-
-<!-- ======FIMMMMMM DAAAA SECTION============= -->
-
-<section id="bibliografia">
-
-  <div class="bibliografia-text">
-    <p>Testimonials</p>
-    <h2>What they say</h2>
-  </div>
-
-  <div class="bibliografia-img">
-   
-    <div class="bibliografia-bloco">
-      <h4>Senectus aptent id urna vulputate pede litora vestibulum eu.
-        Finibus molestie natoque at urna auctor justo sagittis facilisis
-        quisque vestibulum habitant.</h4>
-      <figure>
- <img src="img/Angelina.png" alt="">
-        <figcaption>ANGELINA</figcaption>
-      </figure>
-     
-    </div>
-
-    <div class="bibliografia-bloco">
-      <h4>Senectus aptent id urna vulputate pede litora vestibulum eu.
-        Finibus molestie natoque at urna auctor justo sagittis facilisis
-        quisque vestibulum habitant.</h4>
-      <figure>
- <img src="img/Anderson.png" alt="">
-        <figcaption>ANDERSON</figcaption>
-      </figure>
-     
-    </div>
-
-    <div class="bibliografia-bloco">
-      <h4>Senectus aptent id urna vulputate pede litora vestibulum eu.
-        Finibus molestie natoque at urna auctor justo sagittis facilisis
-        quisque vestibulum habitant.</h4>
-      <figure>
-<img src="img/Hanna.png" alt="">
-        <figcaption>HANNA</figcaption>
-      </figure>
-     
-    </div>
-    
-    <div class="bibliografia-bloco">
-      <h4>Senectus aptent id urna vulputate pede litora vestibulum eu.
-        Finibus molestie natoque at urna auctor justo sagittis facilisis
-        quisque vestibulum habitant.</h4>
-      <figure> 
-        <img src="img/Jacob.png" alt="">
-        <figcaption>JACOB</figcaption>
-      </figure>
-     
-    </div>
-  </div>
-</section>
-
-<!-- ==========fimmmmm da sectionn============ -->
-
-<section id="tecn">
-
-  <figure class="tecn-figure">
-    <img src="img/page.png" alt="">
-  </figure>
-
-  <div class="tecn-text">
-    <h2>The technology works for tomorrow</h2>
-    <p>Magnis primis justo mollis porttitor porta. Non placerat nulla mauris
-      viverra ultrices consectetur nisl scelerisque libero eu adipiscing.
-      Massa mus risus mollis ultrices a letius gravida egestas.
-    </p>
-  </div>
-</section>
-
-
-<!-- ===============fimm da section============== -->
-
-<section id="people">
-
-
-
-  <div class="people-text">
-    <p>Our Team</p>
-    <h2>Awesome People's Behind Us</h2>
-  </div>
-
-
-  <div class="people-principal">
-
-  <div class="people-Alice">
-      <div class="Alice">
-     <h3>Alice</h3>
-    </div>
-    </div>
-      
-
-    <div class="people-willian">
-      <div class="img-willian">
-      <div class="willian">
-     <h3>willian</h3>
-    </div>
-    </div>
-    </div>
-  
-  </div>
- <div class="botao">
-  <button class="btngo">Go To Team</button>
-</div>
-    
-</section>
-
-<section id="group">
-
-  <div class="group-text">
-    <h3>Have more questions?</h3>
-    <p>Just reach out, we’re always around to answer any questions.</p>
-    <button class="btngo">Contact Us </button>
-  </div>
-
-</section>
-
-<section class="Article">
-  <div class="Article-text">
-    <h2>News & Article</h2>
-  </div>
-
-  <div class="Article-carousel" id="carousel">
-    <div class="img-carousel">
-      <img src="img/men.png" alt="">
-      <p>January 15, 2022</p>
-      <h3>3 Things You’ll Need to Launch a Creative Business</h3>
-    </div>
-
-
-    <div class="img-carousel">
-      <img src="img/social.png" alt="">
-      <p>January 15, 2022</p>
-      <h3>Why Your Startup Needs an Active Social Media Presence</h3>
-    </div>
-
-    <div class="img-carousel" >
-      <img src="img/folha.png" alt="">
-      <p>January 15, 2022</p>
-      <h3>How Brand Activism Can Influence Business Performance</h3>
-    </div>
-    
-  </div>
-
-  <div class="button-carousel">
-  <button id="prevBtn"> ANTERIOR</button>
-  <button id="nextBtn">PROXIMA</button>
-</div>
-</section>
-</main>
-
-  
-
-
-<footer>
-<div class="footer-text">
-
-  <div class="text-bloco">
-  <h2>Don't miss updates and other promotions from us.</h2>
-  <p>Semper eget duis at tellus at urna condimentum.</p>
-  <input type="text" class="footer-search-input" placeholder="Enter Your Email">
-  <button class="footer-search-btn">Subscribe</button>
-</div>
-</div>
-
-<div class="footer-rodape">
-  <p>© Copyright 2022 Mobirise - All Rights Reserved</p>
-</div>
-
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>
-
-
-
